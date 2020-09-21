@@ -1,3 +1,10 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .row {
   width: 992px;
   margin-left: auto;
@@ -75,12 +82,12 @@ img {
 /*Responsive*/
 
 @media screen and (max-width: 420px) {
-
   #lezioni .row>.left,
   #lezioni .row>.right,
   #steps .row>.left,
   #steps .row>.central,
   #steps .row>.right {
+    width: 100%;
     clear: none;
     float: none;
   }
@@ -94,8 +101,12 @@ img {
   }
 
   h1 {
-    margin: auto;
+    margin-bottom: 20px;
   }
 
-
+  .left,
+  .right,
+  .central {
+    margin-bottom: 30px;
+  }
 }
